@@ -1,0 +1,130 @@
+@font-face {
+  font-family: AlegreyaBold;
+  src: url("fonts/Alegreya-Bold.otf"); }
+@font-face {
+  font-family: AlegreyaItalic;
+  src: url("fonts/Alegreya-Italic.otf"); }
+@font-face {
+  font-family: AlegreyaBoldItalic;
+  src: url("fonts/Alegreya-BoldItalic.otf"); }
+@font-face {
+  font-family: AlegreyaRegular;
+  src: url("fonts/Alegreya-Regular.otf"); }
+* {
+  box-sizing: border-box !important; }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "AlegreyaRegular", "Georgia", Arial, serif;
+  font-size: 22px; }
+
+.far-left-bar, .left-bar, .middle-bar, .right-bar, .far-right-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition-property: left, width;
+  transition-duration: 0.1s; }
+
+.la-far-left .far-left-bar {
+  left: 0;
+  width: 50%; }
+.la-far-left .left-bar {
+  left: 50%;
+  width: 50%; }
+.la-far-left .middle-bar, .la-far-left .right-bar, .la-far-left .far-right-bar {
+  left: 100%; }
+
+.la-far-left-middle .far-left-bar {
+  left: 0;
+  width: 40%; }
+.la-far-left-middle .left-bar {
+  left: 40%;
+  width: 40%; }
+.la-far-left-middle .middle-bar {
+  left: 80%;
+  width: 20%; }
+.la-far-left-middle .right-bar, .la-far-left-middle .far-right-bar {
+  left: 100%; }
+
+.la-left .far-left-bar {
+  left: -40%;
+  width: 40%; }
+.la-left .left-bar {
+  left: 0;
+  width: 100%; }
+.la-left .middle-bar, .la-left .right-bar, .la-left .far-right-bar {
+  left: 100%; }
+
+.la-left-middle .far-left-bar {
+  left: -40%;
+  width: 40%; }
+.la-left-middle .left-bar {
+  left: 0;
+  width: 80%; }
+.la-left-middle .middle-bar {
+  left: 80%;
+  width: 20%; }
+.la-left-middle .right-bar, .la-left-middle .far-right-bar {
+  left: 100%; }
+
+.la-middle .far-left-bar {
+  left: -40%;
+  width: 40%; }
+.la-middle .left-bar {
+  left: 0;
+  width: 40%; }
+.la-middle .middle-bar {
+  left: 40%;
+  width: 20%; }
+.la-middle .right-bar {
+  left: 60%;
+  width: 40%; }
+.la-middle .far-right-bar {
+  left: 100%; }
+
+.la-middle-right .far-left-bar, .la-middle-right .left-bar {
+  left: -40%;
+  width: 40%; }
+.la-middle-right .middle-bar {
+  left: 0;
+  width: 20%; }
+.la-middle-right .right-bar {
+  left: 20%;
+  width: 80%; }
+.la-middle-right .far-right-bar {
+  left: 100%; }
+
+.la-right .far-left-bar, .la-right .left-bar, .la-right .middle-bar {
+  left: -40%;
+  width: 40%; }
+.la-right .right-bar {
+  left: 0%;
+  width: 100%; }
+.la-right .far-right-bar {
+  left: 100%; }
+
+.la-middle-far-right .far-left-bar, .la-middle-far-right .left-bar {
+  left: -40%;
+  width: 40%; }
+.la-middle-far-right .middle-bar {
+  left: 0%;
+  width: 20%; }
+.la-middle-far-right .right-bar {
+  left: 20%;
+  width: 40%; }
+.la-middle-far-right .far-right-bar {
+  left: 60%;
+  width: 40%; }
+
+.la-middle-far-right .far-left-bar, .la-middle-far-right .left-bar, .la-middle-far-right .middle-bar {
+  left: -40%;
+  width: 40%; }
+.la-middle-far-right .right-bar {
+  left: 0;
+  width: 50%; }
+.la-middle-far-right .far-right-bar {
+  left: 50%;
+  width: 50%; }

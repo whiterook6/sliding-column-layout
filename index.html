@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="LayoutApp" ng-controller="LayoutController as ctrl" ng-strict-di>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sweet New Column Layout</title>
+
+	<link href="css/css.reset.css" rel="stylesheet">
+	<link href="css/grid.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body ng-class="ctrl.layout_class">
+	<div class="far-left-bar">
+		<div class="header">Far Left Header</div>
+		<div class="body">
+			<button ng-click="ctrl.hide_far_left()">Hide</button>
+		</div>
+	</div>
+	<div class="left-bar">
+		<div class="header">Left Header</div>
+		<div class="body">
+			<button ng-click="ctrl.show_far_left()">Show Far Left Bar</button>
+			<button ng-click="ctrl.show_middle()">Show Middle Bar</button>
+			<button ng-click="ctrl.hide_middle()">Hide Middle Bar</button>
+		</div>
+	</div>
+	<div class="middle-bar">
+		<div class="header">Middle Header</div>
+		<div class="body">
+			<button ng-click="ctrl.show_far_left()">Show Far Left Bar</button>
+			<button ng-click="ctrl.show_left()">Show Left Bar</button>
+			<button ng-click="ctrl.hide_left()">Hide Left Bar</button>
+			<button ng-click="ctrl.hide_right()">Hide Right Bar</button>
+			<button ng-click="ctrl.show_right()">Show Right Bar</button>
+			<button ng-click="ctrl.show_right_far()">Show Far Right Bar</button>
+		</div>
+	</div>
+	<div class="right-bar">
+		<div class="header">Right Header</div>
+		<div class="body">Right Body</div>
+	</div>
+	<div class="far-right-bar">
+		<div class="header">Far Right Header</div>
+		<div class="body">Far Right Body</div>
+	</div>
+
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="js/site.js"></script>
+</body>
+</html>
