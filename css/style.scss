@@ -27,6 +27,11 @@ body {
 	font-size: 22px;
 }
 
+.middle-bar {
+	background-color: #403C60;
+	color: #DFDFE5;
+}
+
 .far-left-bar, .left-bar, .middle-bar, .right-bar, .far-right-bar {
 	position: absolute;
 	top: 0;
@@ -35,7 +40,7 @@ body {
 	overflow-y: scroll;
 
 	transition-property: left, width;
-	transition-duration: 0.1s;
+	transition-duration: 1s;
 }
 
 .la-far-left {
@@ -156,7 +161,7 @@ body {
 	}
 }
 
-.la-middle-far-right {
+.la-middle-right-far {
 	.far-left-bar, .left-bar {
 		left: -40%;
 		width: 40%;
@@ -175,7 +180,7 @@ body {
 	}
 }
 
-.la-middle-far-right {
+.la-right-far {
 	.far-left-bar, .left-bar, .middle-bar {
 		left: -40%;
 		width: 40%

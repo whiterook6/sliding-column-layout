@@ -42,7 +42,7 @@ angular
 
 			ctrl.show_far_left = ctrl.far_left_middle;
 			ctrl.show_left = ctrl.middle;
-			ctrl.hide_left = ctrl.right_middle;
+			ctrl.hide_left = ctrl.middle_right;
 			ctrl.hide_right = ctrl.left_middle;
 			ctrl.show_right = ctrl.middle;
 			ctrl.show_right_far = ctrl.middle_right_far;
@@ -75,7 +75,6 @@ angular
 
 		ctrl.right_far = function(){
 			ctrl.layout_class = "la-right-far";
-			console.log(ctrl.layout_class);
 
 			ctrl.show_middle = ctrl.middle_right_far;
 			ctrl.hide_right_far = ctrl.right;
