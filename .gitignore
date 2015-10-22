@@ -1,1 +1,3 @@
 ./css/.sass-cache/
+bower_components
+.DS_store
