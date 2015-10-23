@@ -1,19 +1,6 @@
-@font-face {
-	font-family: AlegreyaBold;
-	src: url('fonts/Alegreya-Bold.otf');
-}
-@font-face {
-	font-family: AlegreyaItalic;
-	src: url('fonts/Alegreya-Italic.otf');
-}
-@font-face {
-	font-family: AlegreyaBoldItalic;
-	src: url('fonts/Alegreya-BoldItalic.otf');
-}
-@font-face {
-	font-family: AlegreyaRegular;
-	src: url('fonts/Alegreya-Regular.otf');
-}
+@import "colors.scss";
+@import "fonts.scss";
+@import "elements.scss";
 
 * {
 	box-sizing: border-box !important;
@@ -23,173 +10,190 @@ body {
 	width: 100%;
 	height: 100%;
 
-	font-family: "AlegreyaRegular", "Georgia", Arial, serif;
-	font-size: 22px;
-}
+	background-color: $silver;
+	color: $midnight-blue;
 
-.middle-bar {
-	background-color: #403C60;
-	color: #DFDFE5;
-}
+	.bar {
+		bottom: 0;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		position: absolute;
+		top: 0;
+		transition-duration: 0.3s;
+		transition-property: left, width;
 
-.far-left-bar, .left-bar, .middle-bar, .right-bar, .far-right-bar {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	overflow-x: hidden;
-	overflow-y: scroll;
+		.header {
+			height: 40px;
+			line-height: 40px;
+			background-color: $midnight-blue;
+			color: $clouds;
+			padding: 5px;
+		}
+	}
 
-	transition-property: left, width;
-	transition-duration: 1s;
+	.content {
+		.body {
+			background-color: $clouds;
+			border: 2px solid $wet-asphalt;
+			border-radius: 5px;
+			padding: 3px;
+		}
+	}
+
+	.middle {
+		background-color: $midnight-blue;
+		color: $clouds;
+		width: 20%;
+	}
 }
 
 .la-far-left {
-	.far-left-bar {
+	.far-left {
 		left: 0;
 		width: 50%;
 	}
-	.left-bar {
+	.left {
 		left: 50%;
 		width: 50%;
 	}
-	.middle-bar, .right-bar, .far-right-bar {
+	.middle, .right, .far-right {
 		left: 100%;
 	}
 }
 
 .la-far-left-middle {
-	.far-left-bar {
+	.far-left {
 		left: 0;
 		width: 40%;
 	}
-	.left-bar {
+	.left {
 		left: 40%;
 		width: 40%;
 	}
-	.middle-bar {
+	.middle {
 		left: 80%;
 		width: 20%
 	}
-	.right-bar, .far-right-bar {
+	.right, .far-right {
 		left: 100%;
 	}
 }
 
 .la-left {
-	.far-left-bar {
+	.far-left {
 		left: -40%;
 		width: 40%;
 	}
-	.left-bar {
+	.left {
 		left: 0;
 		width: 100%;
 	}
-	.middle-bar, .right-bar, .far-right-bar {
+	.middle, .right, .far-right {
 		left: 100%;
 	}
 }
 
 .la-left-middle {
-	.far-left-bar {
+	.far-left {
 		left: -40%;
 		width: 40%;
 	}
-	.left-bar {
+	.left {
 		left: 0;
 		width: 80%;
 	}
-	.middle-bar {
+	.middle {
 		left: 80%;
 		width: 20%
 	}
-	.right-bar, .far-right-bar {
+	.right, .far-right {
 		left: 100%;
 	}
 }
 
 .la-middle {
-	.far-left-bar {
+	.far-left {
 		left: -40%;
 		width: 40%;
 	}
-	.left-bar {
+	.left {
 		left: 0;
 		width: 40%;
 	}
-	.middle-bar {
+	.middle {
 		left: 40%;
 		width: 20%
 	}
-	.right-bar {
+	.right {
 		left: 60%;
 		width: 40%;
 	}
-	.far-right-bar {
+	.far-right {
 		left: 100%;
 	}
 }
 
 .la-middle-right {
-	.far-left-bar, .left-bar {
+	.far-left, .left {
 		left: -40%;
 		width: 40%;
 	}
-	.middle-bar {
+	.middle {
 		left: 0;
 		width: 20%
 	}
-	.right-bar {
+	.right {
 		left: 20%;
 		width: 80%;
 	}
-	.far-right-bar {
+	.far-right {
 		left: 100%;
 	}
 }
 
 .la-right {
-	.far-left-bar, .left-bar, .middle-bar {
+	.far-left, .left, .middle {
 		left: -40%;
 		width: 40%
 	}
-	.right-bar {
+	.right {
 		left: 0%;
 		width: 100%;
 	}
-	.far-right-bar {
+	.far-right {
 		left: 100%;
 	}
 }
 
 .la-middle-right-far {
-	.far-left-bar, .left-bar {
+	.far-left, .left {
 		left: -40%;
 		width: 40%;
 	}
-	.middle-bar {
+	.middle {
 		left: 0%;
 		width: 20%
 	}
-	.right-bar {
+	.right {
 		left: 20%;
 		width: 40%;
 	}
-	.far-right-bar {
+	.far-right {
 		left: 60%;
 		width: 40%;
 	}
 }
 
 .la-right-far {
-	.far-left-bar, .left-bar, .middle-bar {
+	.far-left, .left, .middle {
 		left: -40%;
 		width: 40%
 	}
-	.right-bar {
+	.right {
 		left: 0;
 		width: 50%;
 	}
-	.far-right-bar {
+	.far-right {
 		left: 50%;
 		width: 50%;
 	}

@@ -11,25 +11,39 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body ng-class="ctrl.layout_class">
-	<div class="far-left-bar">
+	<div class="content bar far-left">
 		<div class="header">Far Left Header</div>
-		<div class="body" ng-view=""></div>
+		<div class="body">
+			<button ng-click="ctrl.hide_far_left()">Hide Far Left</button>
+		</div>
 	</div>
-	<div class="left-bar">
+	<div class="content bar left">
 		<div class="header">Left Header</div>
-		<div class="body" ng-view=""></div>
+		<div class="body">
+			<button ng-click="ctrl.show_far_left()">Show Far Left</button>
+			<button ng-click="ctrl.show_middle()">Show Middle</button>
+		</div>
 	</div>
-	<div class="middle-bar">
+	<div class="bar middle">
 		<div class="header">Middle Header</div>
-		<div class="body" ng-view=""></div>
+		<div class="body">
+			<button ng-click="ctrl.show_right()">Show Right</button>
+			<button ng-click="ctrl.hide_middle()">Hide Middle</button>
+		</div>
 	</div>
-	<div class="right-bar">
+	<div class="content bar right">
 		<div class="header">Right Header</div>
-		<div class="body" ng-view=""></div>
+		<div class="body">
+			Right Body
+			<button ng-click="ctrl."></button>
+		</div>
 	</div>
-	<div class="far-right-bar">
+	<div class="content bar far-right">
 		<div class="header">Far Right Header</div>
-		<div class="body" ng-view=""></div>
+		<div class="body">
+			Far Right Body
+			<button ng-click="ctrl."></button>
+		</div>
 	</div>
 
 	<script src="bower_components/angular/angular.min.js"></script>

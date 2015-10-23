@@ -1,0 +1,20 @@
+button {
+	height: 25px;
+	border: 0;
+	border-radius: 3px;
+
+	background-color: $belize-hole;
+	color: $clouds;
+	padding: auto 10px;
+
+	line-height: 25px;
+	font-size: 16px;
+	font-family: inherit;
+	outline-color: transparent;
+	outline-style: none;
+
+
+	&:hover {
+		background-color: $peter-river;
+	}
+}
