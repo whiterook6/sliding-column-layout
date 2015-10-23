@@ -1,0 +1,20 @@
+{
+  "name": "sliding-column-layout",
+  "homepage": "https://github.com/whiterook6/sliding-column-layout",
+  "authors": [
+    "whiterook6 <whiterook6@gmail.com>"
+  ],
+  "description": "A test layout system with sliding columns for context",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}
