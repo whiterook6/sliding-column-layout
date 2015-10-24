@@ -11,38 +11,46 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body ng-class="ctrl.layout_class">
-	<div class="content bar far-left">
-		<div class="header">Far Left Header</div>
-		<div class="body">
-			<button ng-click="ctrl.hide_far_left()">Hide Far Left</button>
+	<div class="bar far-left">
+		<div class="content">
+			<div class="header">Far Left Header</div>
+			<div class="body">
+				<button ng-click="ctrl.hide_far_left()">Hide Far Left</button>
+			</div>
 		</div>
 	</div>
-	<div class="content bar left">
-		<div class="header">Left Header</div>
-		<div class="body">
-			<button ng-click="ctrl.show_far_left()">Show Far Left</button>
-			<button ng-click="ctrl.show_middle()">Show Middle</button>
+	<div class="bar left">
+		<div class="content">
+			<div class="header">Left Header</div>
+			<div class="body">
+				<button ng-click="ctrl.show_far_left()">Show Far Left</button>
+				<button ng-click="ctrl.show_middle()">Show Middle</button>
+			</div>
 		</div>
 	</div>
 	<div class="bar middle">
 		<div class="header">Middle Header</div>
 		<div class="body">
+			<button ng-click="ctrl.show_left()">Show Left</button>
 			<button ng-click="ctrl.show_right()">Show Right</button>
 			<button ng-click="ctrl.hide_middle()">Hide Middle</button>
 		</div>
 	</div>
-	<div class="content bar right">
-		<div class="header">Right Header</div>
-		<div class="body">
-			Right Body
-			<button ng-click="ctrl."></button>
+	<div class="bar right">
+		<div class="content">
+			<div class="header">Right Header</div>
+			<div class="body">
+				<button ng-click="ctrl.show_middle()">Show Middle</button>
+				<button ng-click="ctrl.show_right_far()">Show Far Right</button>
+			</div>
 		</div>
 	</div>
-	<div class="content bar far-right">
-		<div class="header">Far Right Header</div>
-		<div class="body">
-			Far Right Body
-			<button ng-click="ctrl."></button>
+	<div class="bar far-right">
+		<div class="content">
+			<div class="header">Far Right Header</div>
+			<div class="body">
+				<button ng-click="ctrl.hide_right_far()">Hide Far Right</button>
+			</div>
 		</div>
 	</div>
 
